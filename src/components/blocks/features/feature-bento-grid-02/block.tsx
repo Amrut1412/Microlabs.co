@@ -12,7 +12,7 @@ import { LuCalendar, LuShieldAlert, LuTrendingUp, LuUsers } from 'react-icons/lu
 
 export const Block = () => {
   return (
-    <Container maxW="6xl" pb={{ base: '16', md: '20' }}>
+    <Container maxW="6xl" pb={{ base: '16', md: '16' }}>
       <Stack gap={{ base: '12', md: '12' }}>
         <Stack gap="6" align="center" textAlign="center">
           <Badge variant="subtle" size="lg" colorPalette="blue">
