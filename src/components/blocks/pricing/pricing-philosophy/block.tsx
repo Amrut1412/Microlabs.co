@@ -35,18 +35,17 @@ export const Block = () => {
           {/* What We Do */}
           <Box
             p="8"
-            bg="green.50"
+            background="linear-gradient(135deg, var(--chakra-colors-brand-50) 0%, var(--chakra-colors-brand-100) 100%)"
             borderRadius="2xl"
             borderWidth="2px"
-            borderColor="green.200"
-            _dark={{ bg: 'green.950', borderColor: 'green.800' }}
+            borderColor="brand.100"
           >
             <Stack gap="6">
               <HStack gap="3">
-                <Icon fontSize="2xl" color="green.600" _dark={{ color: 'green.400' }}>
+                <Icon fontSize="2xl" color="brand.500" _dark={{ color: 'brand.500' }}>
                   <LuCheck />
                 </Icon>
-                <Heading size="xl" color="green.700" _dark={{ color: 'green.300' }}>
+                <Heading size="xl" color="brand.500" _dark={{ color: 'brand.500' }}>
                   What We Do
                 </Heading>
               </HStack>
@@ -57,8 +56,8 @@ export const Block = () => {
                     <HStack gap="3" mb="2" align="start">
                       <Icon 
                         fontSize="xl" 
-                        color="green.600" 
-                        _dark={{ color: 'green.400' }}
+                        color="brand.500" 
+                        _dark={{ color: 'brand.500' }}
                         mt="0.5"
                       >
                         {item.icon}

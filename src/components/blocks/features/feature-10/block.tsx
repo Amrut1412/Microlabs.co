@@ -30,7 +30,7 @@ export const Block = () => {
         <SimpleGrid 
           maxW="5xl" 
           mx="auto" 
-          columns={{ base: 2, md: 4 }} 
+          columns={{ base: 2, md: 2, lg:4 }} 
           gap={{ base: '8', md: '12' }}
         >
           {stats.map((stat) => (

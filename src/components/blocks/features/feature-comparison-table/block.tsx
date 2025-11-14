@@ -36,7 +36,7 @@ export const Block = () => {
           overflow="hidden"
           bg="bg.panel"
         >
-          <Table.Root size="lg" variant="outline" interactive>
+          <Table.Root size="lg" variant="outline" interactive border={'border.emphasized'}>
             <Table.Header>
               <Table.Row bg="bg.muted">
                 <Table.ColumnHeader 
@@ -53,8 +53,8 @@ export const Block = () => {
                   py="6"
                   px={{ base: '4', md: '8' }}
                   textAlign="center"
-                  color="green.600"
-                  _dark={{ color: 'green.400' }}
+                  color="brand.600"
+                  _dark={{ color: 'brand.400' }}
                 >
                   Microlabs
                 </Table.ColumnHeader>
@@ -89,14 +89,13 @@ export const Block = () => {
                   <Table.Cell 
                     py="6"
                     px={{ base: '4', md: '8' }}
-                    bg="green.50"
-                    _dark={{ bg: 'green.950' }}
+                   
                   >
                     <Stack gap="2" align="center">
                       <Icon 
                         fontSize="2xl" 
-                        color="green.600" 
-                        _dark={{ color: 'green.400' }}
+                        color="brand.600" 
+                        _dark={{ color: 'brand.400' }}
                       >
                         <LuCheck />
                       </Icon>
@@ -113,8 +112,6 @@ export const Block = () => {
                   <Table.Cell 
                     py="6"
                     px={{ base: '4', md: '8' }}
-                    bg="red.50"
-                    _dark={{ bg: 'red.950' }}
                   >
                     <Stack gap="2" align="center">
                       <Icon 

@@ -47,11 +47,6 @@ export const ProductCard = (props: ProductCardProps) => {
       borderRadius="2xl"
       transition="all 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
       height="full"
-      boxShadow={isPopular ? '0 20px 60px -15px rgba(2, 62, 138, 0.4)' : '0 10px 30px -10px rgba(0, 0, 0, 0.1)'}
-      _hover={{ 
-        transform: 'translateY(-8px) scale(1.02)',
-        boxShadow: isPopular ? '0 25px 70px -10px rgba(2, 62, 138, 0.5)' : '0 20px 50px -10px rgba(2, 62, 138, 0.3)',
-      }}
     >
       <Box
         p="8"
@@ -59,12 +54,10 @@ export const ProductCard = (props: ProductCardProps) => {
         height="full"
         position="relative"
         overflow="hidden"
-        bg={isPopular 
-          ? 'linear-gradient(135deg, var(--chakra-colors-brand-50) 0%, var(--chakra-colors-brand-100) 50%, var(--chakra-colors-brand-50) 100%)'
-          : 'bg.panel'
+        bg={'bg.panel'
         }
         borderWidth="2px"
-        borderColor={isPopular ? 'brand.300' : 'border.emphasized'}
+        borderColor={'border.emphasized'}
       >
         {/* Background Decorative Elements */}
         <Box
@@ -74,7 +67,7 @@ export const ProductCard = (props: ProductCardProps) => {
           width="120px"
           height="120px"
           borderRadius="full"
-          bg={isPopular ? 'brand.200' : 'gray.100'}
+          bg={'gray.100'}
           opacity="0.4"
           filter="blur(30px)"
           pointerEvents="none"
@@ -86,25 +79,10 @@ export const ProductCard = (props: ProductCardProps) => {
           width="150px"
           height="150px"
           borderRadius="full"
-          bg={isPopular ? 'brand.300' : 'gray.200'}
+          bg={'gray.200'}
           opacity="0.3"
           filter="blur(40px)"
           pointerEvents="none"
-        />
-
-        {/* Top Accent Bar */}
-        <Box
-          position="absolute"
-          top="0"
-          left="0"
-          right="0"
-          height="6px"
-          background={isPopular 
-            ? 'linear-gradient(90deg, var(--chakra-colors-brand-400), var(--chakra-colors-brand-600), var(--chakra-colors-brand-400))'
-            : 'linear-gradient(90deg, var(--chakra-colors-gray-200), var(--chakra-colors-gray-300), var(--chakra-colors-gray-200))'
-          }
-          backgroundSize="200% 100%"
-          animation={isPopular ? 'shimmer 3s infinite' : 'none'}
         />
 
         <Stack gap="6" height="full" position="relative" zIndex="1">
@@ -122,9 +100,7 @@ export const ProductCard = (props: ProductCardProps) => {
               gap="1.5"
               px="4"
               py="2"
-              borderRadius="full"
               fontWeight="bold"
-              boxShadow="0 6px 16px rgba(2, 62, 138, 0.4)"
               animation="pulse 2s ease-in-out infinite"
             >
               <LuSparkles size="14" />
@@ -231,19 +207,10 @@ export const ProductCard = (props: ProductCardProps) => {
 
           {/* Learn More Button with enhanced styling */}
           <Button
-            variant="solid"
+            variant="outline"
             colorPalette="brand"
-            size="xl"
+            size="md"
             width="full"
-            fontWeight="bold"
-            borderRadius="xl"
-            py="6"
-            boxShadow={isPopular ? '0 6px 20px rgba(2, 62, 138, 0.3)' : 'md'}
-            _hover={{
-              boxShadow: '0 8px 30px rgba(2, 62, 138, 0.4)',
-              transform: 'translateY(-2px)',
-            }}
-            transition="all 0.3s"
             asChild
           >
             <a 

@@ -15,6 +15,7 @@ import { Block as ROICalculator } from '@/src/components/blocks/calculators/roi-
 import { Block as GettingStarted } from '@/src/components/blocks/getting-started/three-ways-to-start/block';
 import { Block as FAQ } from '@/src/components/blocks/faqs/faq-with-inline-headline/block';
 import { Block as FinalCTA } from '@/src/components/blocks/cta/final-cta/block';
+import { Block as Footer } from '@/src/components/blocks/footers/footer-with-four-columns/block';
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <GettingStarted />
       <FAQ />
       <FinalCTA />
+      <Footer />
     </>
   );
 }

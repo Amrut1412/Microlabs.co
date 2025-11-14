@@ -32,7 +32,7 @@ export const Block = () => {
         </Stack>
 
         {/* Products Grid */}
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="6">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} justifyContent={'center'} gap="6">
           {products.map((product) => (
             <ProductCard key={product.name} {...product} />
           ))}
