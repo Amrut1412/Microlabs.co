@@ -113,7 +113,7 @@ export const Block = () => {
             <Badge
               size="lg"
               variant="subtle"
-              colorPalette="green"
+              colorPalette="gray"
               display="flex"
               alignItems="center"
               gap="2"
@@ -126,7 +126,7 @@ export const Block = () => {
             <Badge
               size="lg"
               variant="subtle"
-              colorPalette="green"
+              colorPalette="gray"
               display="flex"
               alignItems="center"
               gap="2"
@@ -139,7 +139,7 @@ export const Block = () => {
             <Badge
               size="lg"
               variant="subtle"
-              colorPalette="green"
+              colorPalette="gray"
               display="flex"
               alignItems="center"
               gap="2"
