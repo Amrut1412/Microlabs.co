@@ -9,6 +9,8 @@ import { Block as StatsNew } from '@/src/components/blocks/features/feature-10/b
 import { Block as Testimonials } from '@/src/components/blocks/testimonials/testimonial-with-card/block';
 import { Block as PricingPhilosophy } from '@/src/components/blocks/pricing/pricing-philosophy/block';
 import { Block as DifferenceBlock } from '@/src/components/blocks/features/feature-difference/block';
+import { Block as ComparisonTable } from '@/src/components/blocks/features/feature-comparison-table/block';
+import { Block as UseCases } from '@/src/components/blocks/features/feature-use-cases/block';
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
       <Mission />
       <PricingPhilosophy />
       <DifferenceBlock />
+      <ComparisonTable />
+      <UseCases />
     </>
   );
 }
