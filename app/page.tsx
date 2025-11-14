@@ -7,6 +7,8 @@ import { Block as Features } from '@/src/components/blocks/features/feature-04/b
 import { Block as Products } from '@/src/components/blocks/features/feature-bento-grid-01/block';
 import { Block as StatsNew } from '@/src/components/blocks/features/feature-10/block';
 import { Block as Testimonials } from '@/src/components/blocks/testimonials/testimonial-with-card/block';
+import { Block as PricingPhilosophy } from '@/src/components/blocks/pricing/pricing-philosophy/block';
+import { Block as DifferenceBlock } from '@/src/components/blocks/features/feature-difference/block';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <StatsNew />
       <Testimonials />
       <Mission />
+      <PricingPhilosophy />
+      <DifferenceBlock />
     </>
   );
 }
