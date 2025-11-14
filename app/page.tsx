@@ -11,6 +11,7 @@ import { Block as PricingPhilosophy } from '@/src/components/blocks/pricing/pric
 import { Block as DifferenceBlock } from '@/src/components/blocks/features/feature-difference/block';
 import { Block as ComparisonTable } from '@/src/components/blocks/features/feature-comparison-table/block';
 import { Block as UseCases } from '@/src/components/blocks/features/feature-use-cases/block';
+import { Block as ROICalculator } from '@/src/components/blocks/calculators/roi-calculator/block';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <DifferenceBlock />
       <ComparisonTable />
       <UseCases />
+      <ROICalculator />
     </>
   );
 }
