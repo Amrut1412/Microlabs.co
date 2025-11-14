@@ -1,20 +1,25 @@
-import { Container, SimpleGrid, Stack } from '@chakra-ui/react'
+import { Badge, Container, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import { SectionHeader } from './section-header'
 import { data } from './data'
 import { TestimonialCard } from './testimonial-card'
 
 export const Block = () => (
-  <Container py={{ base: '14', md: '14' }}  maxW="5xl" 
-  mx="auto" >
+  <Container pt={{ base: '14', md: '14' }} maxW="7xl"
+    mx="auto" >
     <Stack gap="12">
-      <SectionHeader
-        align="center"
-        textAlign="center"
-        tagline="Testimonials"
-        headline="What Our Users Say"
-        description="Discover how Microlabs is helping businesses grow and succeed."
-      />
-      <SimpleGrid gap="6" columns={{ base: 1, md: 3 }}>
+      {/* Header Section */}
+      <Stack gap="6" align="center" textAlign="center">
+        <Badge variant="subtle" size="lg" colorPalette="brand">
+          Testimonials
+        </Badge>
+        <Heading size={{ base: '4xl', md: '5xl' }} fontWeight="bold" lineHeight="1.1">
+          What Our Users Say
+        </Heading>
+        <Text color="fg.muted" textStyle="xl" maxW="3xl">
+          Discover how Microlabs is helping businesses grow and succeed.
+        </Text>
+      </Stack>
+      <SimpleGrid gap="6" columns={{ base: 1, md: 2, lg: 3 }}>
         {data.map((item) => (
           <TestimonialCard key={item.authorName} data={item} />
         ))}

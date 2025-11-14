@@ -33,7 +33,29 @@ export const NavbarLinks = ({ onLinkClick, ...props }: NavbarLinksProps) => {
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    
+    // Get the target element
+    const targetId = href.replace('#', '')
+    const targetElement = document.getElementById(targetId)
+    
+    if (targetElement) {
+      // Get navbar height to offset scroll position
+      const navbarHeight = 80 // Approximate navbar height
+      const targetPosition = targetElement.offsetTop - navbarHeight
+      
+      // Smooth scroll to the target
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      })
+      
+      // Update URL hash
+      window.history.pushState(null, '', href)
+      setActiveHash(href)
+    }
+    
     if (onLinkClick) {
       onLinkClick()
     }
@@ -48,7 +70,7 @@ export const NavbarLinks = ({ onLinkClick, ...props }: NavbarLinksProps) => {
           <Link
             key={item.label}
             href={item.href}
-            onClick={handleClick}
+            onClick={(e) => handleClick(e, item.href)}
             fontWeight={isActive ? 'bold' : 'semibold'}
             color={isActive ? 'brand.solid' : 'fg.muted'}
             _hover={{

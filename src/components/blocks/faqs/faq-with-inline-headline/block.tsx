@@ -10,7 +10,7 @@ export const Block = () => {
 
   return (
     <Container py={10} maxW="7xl">
-      <SimpleGrid columns={{ base: 1, md: 2 }} gap={{ base: '12', lg: '24' }}>
+      <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} gap={{ base: '12', lg: '24' }}>
         <VStack gap={{ base: '4', md: '6' }} alignItems={'flex-start'}>
           <Badge variant="subtle" size="lg" colorPalette="brand">
             FAQ

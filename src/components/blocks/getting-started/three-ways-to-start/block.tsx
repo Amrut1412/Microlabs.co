@@ -47,7 +47,7 @@ export function Block() {
         </VStack>
 
         {/* Three Cards */}
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap={6} mb={{ base: 10, md: 10 }}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={6} mb={{ base: 10, md: 10 }}>
           {steps.map((step) => (
             <Box
               key={step.number}

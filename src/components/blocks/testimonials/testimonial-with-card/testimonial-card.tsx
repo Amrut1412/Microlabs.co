@@ -22,11 +22,12 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
       p="6"
     >
       <Blockquote.Caption display="flex" gap="3" alignItems="center">
-        <Avatar.Root>
-          <Avatar.Fallback name={data.authorName} />
+        <Avatar.Root background="linear-gradient(135deg, var(--chakra-colors-brand-50) 0%, var(--chakra-colors-brand-100) 100%)"
+          >
+          <Avatar.Fallback name={data.authorName} color='brand.600' />
         </Avatar.Root>
         <Box>
-          <Text fontWeight="medium" color="colorPalette.fg">
+          <Text fontWeight="medium" color="brand.600">
             {data.authorName}
           </Text>
           <Text color="fg">{data.authorRole}</Text>

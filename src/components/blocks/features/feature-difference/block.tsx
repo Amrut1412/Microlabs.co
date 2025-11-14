@@ -38,7 +38,7 @@ export const Block = () => {
         </Stack>
 
         {/* Features Grid */}
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="6">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="6">
           {features.map((feature) => (
             <Box
               key={feature.title}

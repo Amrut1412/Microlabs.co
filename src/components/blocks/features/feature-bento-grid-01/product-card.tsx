@@ -10,14 +10,10 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { 
   LuArrowRight, 
-  LuSparkles, 
-  LuPenTool,
-  LuLinkedin,
-  LuScale,
-  LuPresentation,
-  LuChefHat
+  LuSparkles,
 } from 'react-icons/lu'
 
 interface ProductCardProps {
@@ -29,17 +25,17 @@ interface ProductCardProps {
   isPopular?: boolean
 }
 
-const productIcons: Record<string, any> = {
-  'seoengine.ai': LuPenTool,
-  'autoposting.ai': LuLinkedin,
-  'niyam.ai': LuScale,
-  'happydemo.io': LuPresentation,
-  'jalpaan.ai': LuChefHat,
+const productLogos: Record<string, { type: 'image' | 'icon', src?: string, icon?: any }> = {
+  'seoengine.ai': { type: 'image', src: '/seoengine.svg' },
+  'autoposting.ai': { type: 'image', src: '/autoposting.svg' },
+  'niyam.ai': { type: 'image', src: '/Niyam.svg' },
+  'happydemo.io': { type: 'image', src: '/happydemo.svg' },
+  'jalpaan.ai': { type: 'image', src: '/jalpan.svg' },
 }
 
 export const ProductCard = (props: ProductCardProps) => {
   const { name, domain, description, tagline, tags, isPopular } = props
-  const ProductIcon = productIcons[domain] || LuSparkles
+  const productLogo = productLogos[domain] || { type: 'icon', icon: LuSparkles }
 
   return (
     <Box
@@ -108,23 +104,23 @@ export const ProductCard = (props: ProductCardProps) => {
             </Badge>
           )}
 
-          {/* Product Icon Header */}
+          {/* Product Icon/Logo Header */}
           <Stack gap="4">
             <HStack gap="4" align="start">
               <Box
-                p="4"
-                borderRadius="xl"
-                bg={isPopular ? 'brand.solid' : 'brand.muted'}
-                color={isPopular ? 'white' : 'brand.solid'}
-                boxShadow={isPopular ? '0 8px 20px rgba(2, 62, 138, 0.3)' : 'none'}
-                transition="all 0.3s"
-                _groupHover={{
-                  transform: 'rotate(5deg) scale(1.1)',
-                }}
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
               >
-                <Icon fontSize="3xl">
-                  <ProductIcon />
-                </Icon>
+                {productLogo.type === 'image' && productLogo.src && (
+                  <Image
+                    src={productLogo.src}
+                    alt={`${name} logo`}
+                    width={48}
+                    height={48}
+                    style={{ objectFit: 'contain' }}
+                  />
+                )}
               </Box>
               <Stack gap="1" flex="1" pt="1">
                 <Heading 
@@ -190,7 +186,7 @@ export const ProductCard = (props: ProductCardProps) => {
             {tags.map((tag, index) => (
               <Badge
                 key={tag}
-                variant={isPopular && index === 0 ? "solid" : "subtle"}
+                variant={"subtle"}
                 size="md"
                 colorPalette="brand"
                 px="3"
@@ -198,7 +194,6 @@ export const ProductCard = (props: ProductCardProps) => {
                 borderRadius="lg"
                 fontWeight="semibold"
                 fontSize="xs"
-                boxShadow={isPopular && index === 0 ? 'sm' : 'none'}
               >
                 {tag}
               </Badge>

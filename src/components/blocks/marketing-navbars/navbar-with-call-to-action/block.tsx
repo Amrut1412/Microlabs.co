@@ -7,7 +7,18 @@ import { NavbarLinks } from './navbar-links'
 
 export const Block = () => {
   return (
-    <Box borderBottomWidth="1px" bg="bg.panel">
+    <Box 
+      position="fixed" 
+      top="0" 
+      left="0" 
+      right="0" 
+      width="100%"
+      zIndex="9999" 
+      borderBottomWidth="1px" 
+      bg="bg.panel"
+      backdropFilter="blur(10px)"
+      backgroundColor="bg.panel/95"
+    >
       <Container py={{ base: '3.5', md: '4' }}>
         <HStack justify="space-between">
           <Logo />

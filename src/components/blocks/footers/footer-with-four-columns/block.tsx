@@ -92,7 +92,7 @@ export function Block() {
       <Container maxW="7xl">
         <Stack gap={{ base: '10', md: '10' }}>
           {/* Main Footer Content */}
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} gap={{ base: '8', md: '6' }}>
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 5 }} gap={{ base: '8', md: '6' }}>
             {/* Products Column */}
             <VStack align="flex-start" gap="4" ml={10}>
               <Heading size="sm" fontWeight="semibold">
@@ -241,7 +241,7 @@ export function Block() {
             </Stack>
 
             {/* Social Links */}
-            <HStack gap="4">
+            <HStack gap="4" ml={'10'} mr={'10'}>
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}

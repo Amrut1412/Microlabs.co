@@ -12,7 +12,7 @@ import { LuZap, LuShieldCheck, LuTrophy, LuWrench } from 'react-icons/lu'
 
 export const Block = () => {
   return (
-    <Container maxW="7xl">
+    <Container maxW="7xl" pb={'10'}>
       <Stack gap={{ base: '12', md: '16' }}>
         <Stack gap="6" align="center" textAlign="center">
           <Badge variant="subtle" size="lg" colorPalette="brand">

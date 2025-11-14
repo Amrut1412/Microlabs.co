@@ -21,23 +21,35 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Problems />
-      <StatsOld />
-      <Features />
-      <Products />
-      <StatsNew />
-      <Testimonials />
-      <Mission />
-      <PricingPhilosophy />
-      <DifferenceBlock />
-      <ComparisonTable />
-      <UseCases />
-      <ROICalculator />
-      <GettingStarted />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
+      <div style={{ paddingTop: '80px' }}>
+        <section id="home">
+          <Hero />
+        </section>
+        <Problems />
+        <StatsOld />
+        <section id="solutions">
+          <Features />
+          <Mission />
+          <DifferenceBlock />
+          <ComparisonTable />
+          <UseCases />
+        </section>
+        <section id="products">
+          <Products />
+          <StatsNew />
+          <Testimonials />
+        </section>
+        <section id="pricing">
+          <PricingPhilosophy />
+          <ROICalculator />
+          <GettingStarted />
+        </section>
+        <section id="faq">
+          <FAQ />
+        </section>
+        <FinalCTA />
+        <Footer />
+      </div>
     </>
   );
 }
