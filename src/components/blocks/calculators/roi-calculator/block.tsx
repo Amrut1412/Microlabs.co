@@ -24,9 +24,9 @@ export function Block() {
 
   return (
     <Box pb={{ base: 10, md: 10 }}>
-      <Container maxW="6xl">
+      <Container maxW="7xl">
         {/* Header */}
-        <VStack maxW="6xl" mx="auto" textAlign="center" gap={{ base: '4', md: '6' }} mb={'8'}>
+        <VStack maxW="7xl" mx="auto" textAlign="center" gap={{ base: '4', md: '6' }} mb={'8'}>
           <Badge variant="subtle" size="lg" colorPalette="brand">
             💰 ROI Calculator
           </Badge>

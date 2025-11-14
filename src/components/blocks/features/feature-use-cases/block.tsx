@@ -26,7 +26,7 @@ import {
 
 export const Block = () => {
   return (
-    <Container maxW="6xl" py={'10'}>
+    <Container maxW="7xl" py={'10'}>
       <Stack gap={{ base: '8', md: '8' }}>
         {/* Header Section */}
         <Stack gap="6" align="center" textAlign="center">

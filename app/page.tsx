@@ -12,6 +12,8 @@ import { Block as DifferenceBlock } from '@/src/components/blocks/features/featu
 import { Block as ComparisonTable } from '@/src/components/blocks/features/feature-comparison-table/block';
 import { Block as UseCases } from '@/src/components/blocks/features/feature-use-cases/block';
 import { Block as ROICalculator } from '@/src/components/blocks/calculators/roi-calculator/block';
+import { Block as GettingStarted } from '@/src/components/blocks/getting-started/three-ways-to-start/block';
+import { Block as FAQ } from '@/src/components/blocks/faqs/faq-with-inline-headline/block';
 
 export default function Home() {
   return (
@@ -30,6 +32,8 @@ export default function Home() {
       <ComparisonTable />
       <UseCases />
       <ROICalculator />
+      <GettingStarted />
+      <FAQ />
     </>
   );
 }

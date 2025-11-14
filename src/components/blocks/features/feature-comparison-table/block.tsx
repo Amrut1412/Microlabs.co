@@ -14,7 +14,7 @@ import { LuCheck, LuX } from 'react-icons/lu'
 
 export const Block = () => {
   return (
-    <Container maxW="6xl">
+    <Container maxW="7xl">
       <Stack gap={{ base: '12', md: '16' }}>
         {/* Header Section */}
         <Stack gap="6" align="center" textAlign="center">

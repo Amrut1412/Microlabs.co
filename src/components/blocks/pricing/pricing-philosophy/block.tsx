@@ -15,7 +15,7 @@ import { LuCheck, LuX, LuRefreshCw, LuDoorOpen, LuEye, LuLockOpen, LuLock, LuUse
 
 export const Block = () => {
   return (
-    <Container maxW="6xl" py={{ base: '16', md: '10' }}>
+    <Container maxW="7xl" py={{ base: '16', md: '10' }}>
       <Stack gap={{ base: '12', md: '12' }}>
         {/* Header Section */}
         <Stack gap="6" align="center" textAlign="center">

@@ -12,7 +12,7 @@ import { LuAward, LuPiggyBank, LuShield, LuTarget } from 'react-icons/lu'
 
 export const Block = () => {
   return (
-    <Container maxW="6xl" py={{ base: '16', md: '16' }}>
+    <Container maxW="7xl" py={{ base: '16', md: '16' }}>
       <Stack gap={{ base: '12', md: '16' }}>
         {/* Header Section */}
         <Stack gap="6" align="center" textAlign="center">

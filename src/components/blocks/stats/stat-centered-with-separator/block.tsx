@@ -12,7 +12,7 @@ import {
 export const Block = () => {
   return (
     <Box bg="bg.subtle" py={{ base: '16', md: '16' }}>
-      <Container maxW="6xl">
+      <Container maxW="7xl">
         <Stack gap={{ base: '12', md: '16' }}>
           {/* Header Section */}
           <Stack gap="6" align="center" textAlign="center">
