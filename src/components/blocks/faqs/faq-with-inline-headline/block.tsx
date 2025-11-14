@@ -1,5 +1,5 @@
 'use client'
-import { Accordion, Button, Container, SimpleGrid, Span, Stack, Box, Text, VStack, Badge, Heading } from '@chakra-ui/react'
+import { Accordion, Button, Container, SimpleGrid, Span, Stack, Box, Text, VStack, Badge, Heading, Link } from '@chakra-ui/react'
 import { useState } from 'react'
 import { LuMail } from 'react-icons/lu'
 import { SectionHeader } from './section-header'
@@ -67,7 +67,7 @@ export const Block = () => {
             Still Have Questions?
           </Text>
           <Text color="fg.muted" fontSize="lg">
-            Email us at <Text as="a" href="mailto:hello@tinycheque.com" color="brand.500" fontWeight="medium">hello@tinycheque.com</Text>
+            Email us at <Link href="mailto:hello@tinycheque.com" color="brand.500" fontWeight="medium">hello@tinycheque.com</Link>
           </Text>
           <Text color="fg.muted" fontSize="sm">
             We typically respond within a few hours during business hours.
