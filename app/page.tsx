@@ -17,6 +17,7 @@ import { Block as FAQ } from '@/src/components/blocks/faqs/faq-with-inline-headl
 import { Block as FinalCTA } from '@/src/components/blocks/cta/final-cta/block';
 import { Block as JoinCommunityCTA } from '@/src/components/blocks/cta/join-community-cta/block';
 import { Block as Footer } from '@/src/components/blocks/footers/footer-with-four-columns/block';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
         <FinalCTA />
         <Footer />
       </div>
+      <ScrollToTop />
     </>
   );
 }
