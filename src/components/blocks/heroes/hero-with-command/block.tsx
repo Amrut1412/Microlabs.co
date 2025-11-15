@@ -30,7 +30,7 @@ export const Block = () => {
     }
   };
   return (
-    <Container maxW="7xl" py={{ base: '16', md: '24' }}>
+    <Container maxW="7xl" py={{ base: '16', md: '18' }}>
       <Stack gap="12" align={{ sm: 'center' }} textAlign="center">
         <Stack gap="6" maxW={{ md: '4xl' }}>
 
