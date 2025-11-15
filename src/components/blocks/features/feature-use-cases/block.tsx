@@ -91,8 +91,7 @@ export const Block = () => {
                     <HStack key={benefit} gap="2" align="start">
                       <Icon 
                         fontSize="lg" 
-                        color="green.600" 
-                        _dark={{ color: 'green.400' }}
+                        color="green.600"
                         mt="0.5"
                       >
                         <LuCheck />

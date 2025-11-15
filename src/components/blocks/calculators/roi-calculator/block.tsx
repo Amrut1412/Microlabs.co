@@ -48,7 +48,6 @@ export function Block() {
           <Box
             flex="1"
             bg="white"
-            _dark={{ bg: "gray.800" }}
             borderRadius="2xl"
             border="1px solid"
             borderColor="gray.200"
@@ -60,7 +59,6 @@ export function Block() {
               fontWeight="semibold"
               mb={8}
               color="gray.900"
-              _dark={{ color: "white" }}
             >
               Your Current Situation
             </Heading>
@@ -68,10 +66,10 @@ export function Block() {
             {/* Team Size Slider */}
             <VStack gap={2} mb={8} align="stretch">
               <HStack justify="space-between">
-                <Text fontWeight="medium" color="gray.700" _dark={{ color: "gray.300" }}>
+                <Text fontWeight="medium" color="gray.700">
                   Team Size
                 </Text>
-                <Text fontSize="2xl" fontWeight="bold" color="gray.900" _dark={{ color: "white" }}>
+                <Text fontSize="2xl" fontWeight="bold" color="gray.900">
                   {teamSize}
                 </Text>
               </HStack>
@@ -97,7 +95,7 @@ export function Block() {
                 />
               </Box>
 
-              <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }}>
+              <Text fontSize="sm" color="gray.600">
                 Number of team members using SaaS tools
               </Text>
             </VStack>
@@ -105,10 +103,10 @@ export function Block() {
             {/* Monthly SaaS Spend Slider */}
             <VStack gap={2} align="stretch">
               <HStack justify="space-between">
-                <Text fontWeight="medium" color="gray.700" _dark={{ color: "gray.300" }}>
+                <Text fontWeight="medium" color="gray.700">
                   Monthly SaaS Spend
                 </Text>
-                <Text fontSize="2xl" fontWeight="bold" color="gray.900" _dark={{ color: "white" }}>
+                <Text fontSize="2xl" fontWeight="bold" color="gray.900">
                   ${monthlySpend.toLocaleString()}
                 </Text>
               </HStack>
@@ -135,7 +133,7 @@ export function Block() {
                 />
               </Box>
 
-              <Text fontSize="sm" color="gray.600" _dark={{ color: "gray.400" }}>
+              <Text fontSize="sm" color="gray.600">
                 Current monthly spend on similar tools
               </Text>
             </VStack>

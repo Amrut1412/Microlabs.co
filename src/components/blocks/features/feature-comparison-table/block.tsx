@@ -54,7 +54,6 @@ export const Block = () => {
                   px={{ base: '4', md: '8' }}
                   textAlign="center"
                   color="brand.600"
-                  _dark={{ color: 'brand.400' }}
                 >
                   Microlabs
                 </Table.ColumnHeader>
@@ -65,7 +64,6 @@ export const Block = () => {
                   px={{ base: '4', md: '8' }}
                   textAlign="center"
                   color="red.600"
-                  _dark={{ color: 'red.400' }}
                 >
                   Competition
                 </Table.ColumnHeader>
@@ -94,8 +92,7 @@ export const Block = () => {
                     <Stack gap="2" align="center">
                       <Icon 
                         fontSize="2xl" 
-                        color="brand.600" 
-                        _dark={{ color: 'brand.400' }}
+                        color="brand.600"
                       >
                         <LuCheck />
                       </Icon>
@@ -116,8 +113,7 @@ export const Block = () => {
                     <Stack gap="2" align="center">
                       <Icon 
                         fontSize="2xl" 
-                        color="red.600" 
-                        _dark={{ color: 'red.400' }}
+                        color="red.600"
                       >
                         <LuX />
                       </Icon>

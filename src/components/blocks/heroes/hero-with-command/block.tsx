@@ -70,8 +70,10 @@ export const Block = () => {
             Start Free Trial <LuArrowRight />
           </Button>
 
-          <Button size="lg" px="8" variant="outline" colorPalette="gray">
-            See All Products <LuArrowDown />
+          <Button size="lg" px="8" variant="outline" colorPalette="gray" asChild>
+            <a href="#products">
+              See All Products <LuArrowDown />
+            </a>
           </Button>
         </Flex>
 

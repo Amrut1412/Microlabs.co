@@ -42,10 +42,10 @@ export const Block = () => {
           >
             <Stack gap="6">
               <HStack gap="3">
-                <Icon fontSize="2xl" color="brand.500" _dark={{ color: 'brand.500' }}>
+                <Icon fontSize="2xl" color="brand.500">
                   <LuCheck />
                 </Icon>
-                <Heading size="xl" color="brand.500" _dark={{ color: 'brand.500' }}>
+                <Heading size="xl" color="brand.500">
                   What We Do
                 </Heading>
               </HStack>
@@ -56,8 +56,7 @@ export const Block = () => {
                     <HStack gap="3" mb="2" align="start">
                       <Icon 
                         fontSize="xl" 
-                        color="brand.500" 
-                        _dark={{ color: 'brand.500' }}
+                        color="brand.500"
                         mt="0.5"
                       >
                         {item.icon}
@@ -77,17 +76,16 @@ export const Block = () => {
           <Box
             p="8"
             bg="red.50"
-            _dark={{ bg: 'red.950' }}
             borderRadius="2xl"
             borderWidth="2px"
             borderColor="red.200"
           >
             <Stack gap="6">
               <HStack gap="3">
-                <Icon fontSize="2xl" color="red.600" _dark={{ color: 'red.400' }}>
+                <Icon fontSize="2xl" color="red.600">
                   <LuX />
                 </Icon>
-                <Heading size="xl" color="red.700" _dark={{ color: 'red.300' }}>
+                <Heading size="xl" color="red.700">
                   What We Don't Do
                 </Heading>
               </HStack>
@@ -98,8 +96,7 @@ export const Block = () => {
                     <HStack gap="3" mb="2" align="start">
                       <Icon 
                         fontSize="xl" 
-                        color="red.600" 
-                        _dark={{ color: 'red.400' }}
+                        color="red.600"
                         mt="0.5"
                       >
                         {item.icon}

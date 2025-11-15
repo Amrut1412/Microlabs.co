@@ -53,7 +53,6 @@ export function Block() {
               key={step.number}
               position="relative"
               bg="white"
-              _dark={{ bg: 'gray.800' }}
               borderRadius="2xl"
               border="1px solid"
               borderColor="gray.200"
@@ -74,7 +73,6 @@ export function Block() {
                 w="12"
                 h="12"
                 bg="brand.500"
-                _dark={{ bg: 'white' }}
                 color="white"
                 borderRadius="full"
                 fontWeight="bold"
@@ -99,7 +97,6 @@ export function Block() {
                   mt={2}
                   _hover={{
                     bg: 'brand.50',
-                    _dark: { bg: 'brand.950' },
                   }}
                   asChild
                 >
@@ -140,7 +137,6 @@ export function Block() {
                   size="lg"
                   _hover={{
                     bg: 'brand.50',
-                    _dark: { bg: 'brand.950' },
                   }}
                   asChild
                 >
