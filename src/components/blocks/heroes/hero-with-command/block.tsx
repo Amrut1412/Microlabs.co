@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Avatar,
   AvatarGroup,
@@ -15,6 +17,18 @@ import {
 import { LuArrowDown, LuArrowRight, LuCheck, LuStar } from 'react-icons/lu'
 
 export const Block = () => {
+  const handleScrollDown = () => {
+    const solutionsSection = document.getElementById('solutions');
+    if (solutionsSection) {
+      const navbarHeight = 1850; // Approximate navbar height
+      const targetPosition = solutionsSection.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <Container maxW="7xl" py={{ base: '16', md: '24' }}>
       <Stack gap="12" align={{ sm: 'center' }} textAlign="center">
@@ -152,6 +166,26 @@ export const Block = () => {
               Setup in 5 Minutes
             </Badge>
           </HStack>
+
+          <Box
+            bg="gray.100"
+            borderRadius="full"
+            cursor="pointer"
+            p="3"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            onClick={handleScrollDown}
+            _hover={{ bg: 'gray.200' }}
+            transition="background-color 0.2s"
+            style={{
+              animation: 'bounce-down 2s ease-in-out infinite',
+            }}
+          >
+            <Icon fontSize="xl" color="gray.600">
+              <LuArrowDown />
+            </Icon>
+          </Box>
         </Stack>
 
       </Stack>

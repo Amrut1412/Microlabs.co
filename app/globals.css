@@ -25,3 +25,13 @@ body {
 section {
   scroll-margin-top: 100px;
 }
+
+/* Bounce animation for down arrow */
+@keyframes bounce-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
