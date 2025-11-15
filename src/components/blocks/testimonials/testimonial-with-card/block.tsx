@@ -4,7 +4,7 @@ import { data } from './data'
 import { TestimonialCard } from './testimonial-card'
 
 export const Block = () => (
-  <Container pt={{ base: '14', md: '14' }} maxW="7xl"
+  <Container pt={{ base: '14', md: '14' }} mb={10} maxW="7xl"
     mx="auto" >
     <Stack gap="12">
       {/* Header Section */}

@@ -12,6 +12,7 @@ import {
   VStack,
   Separator,
   Flex,
+  Button,
 } from '@chakra-ui/react';
 import {
   FaLinkedin,
@@ -59,6 +60,7 @@ const footerLinks = {
       { label: 'About TinyCheque', href: 'https://tinycheque.com/company/about-us' },
       { label: 'Careers', href: '#careers' },
       { label: 'Partner Program', href: 'https://tinycheque.com/partnership' },
+      { label: 'Join Community', href: 'https://forms.microlabs.co/join' },
       { label: 'Contact Us', href: '#contact' },
     ],
   },
@@ -240,8 +242,21 @@ export function Block() {
               </Text>
             </Stack>
 
-            {/* Social Links */}
-            <HStack gap="4" ml={'10'} mr={'10'}>
+            {/* Social Links and Join Community Button */}
+            <HStack gap="4" ml={'10'} mr={'10'} flexWrap="wrap">
+              <Button
+                asChild
+                size="sm"
+                colorPalette="brand"
+                bg="brand.500"
+                color="white"
+                _hover={{ bg: "brand.600" }}
+                _active={{ bg: "brand.700" }}
+              >
+                <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer">
+                  Join Community
+                </a>
+              </Button>
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}

@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Button, Container, HStack, Spacer } from '@chakra-ui/react'
+import { Box, Button, Container, HStack, Spacer, Stack } from '@chakra-ui/react'
 import { Logo } from './logo'
 import { MobilePopover } from './mobile-popover'
 import { NavbarLinks } from './navbar-links'
@@ -24,9 +24,47 @@ export const Block = () => {
           <Logo />
           <Spacer hideFrom="lg" />
           <NavbarLinks hideBelow="lg" />
-          <Button size={{ base: 'sm' }} bg="brand.500" color="white" _hover={{ bg: "brand.600" }} _active={{ bg: "brand.700" }}>Start Free Trial</Button>
+          <HStack gap="3" hideBelow="lg">
+            <Button 
+              asChild
+              size={{ base: 'sm' }} 
+              variant="outline"
+              colorPalette="brand"
+            >
+              <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer">
+                Join Community
+              </a>
+            </Button>
+            <Button size={{ base: 'sm' }} bg="brand.500" color="white" _hover={{ bg: "brand.600" }} _active={{ bg: "brand.700" }}>Start Free Trial</Button>
+          </HStack>
           <MobilePopover hideFrom="lg">
-            {({ onClose }) => <NavbarLinks onLinkClick={onClose} />}
+            {({ onClose }) => (
+              <Stack gap="4">
+                <NavbarLinks onLinkClick={onClose} />
+                <Stack gap="3" pt="4">
+                  <Button 
+                    asChild
+                    size="sm" 
+                    variant="outline"
+                    colorPalette="brand"
+                  >
+                    <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer" onClick={onClose}>
+                      Join Community
+                    </a>
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    bg="brand.500" 
+                    color="white" 
+                    _hover={{ bg: "brand.600" }} 
+                    _active={{ bg: "brand.700" }}
+                    onClick={onClose}
+                  >
+                    Start Free Trial
+                  </Button>
+                </Stack>
+              </Stack>
+            )}
           </MobilePopover>
         </HStack>
       </Container>

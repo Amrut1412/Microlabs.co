@@ -15,6 +15,7 @@ import { Block as ROICalculator } from '@/src/components/blocks/calculators/roi-
 import { Block as GettingStarted } from '@/src/components/blocks/getting-started/three-ways-to-start/block';
 import { Block as FAQ } from '@/src/components/blocks/faqs/faq-with-inline-headline/block';
 import { Block as FinalCTA } from '@/src/components/blocks/cta/final-cta/block';
+import { Block as JoinCommunityCTA } from '@/src/components/blocks/cta/join-community-cta/block';
 import { Block as Footer } from '@/src/components/blocks/footers/footer-with-four-columns/block';
 
 export default function Home() {
@@ -27,6 +28,11 @@ export default function Home() {
         </section>
         <Problems />
         <StatsOld />
+          <JoinCommunityCTA 
+            tagline="Join Our Community of Innovators"
+            subline="Connect with like-minded professionals, share insights, and collaborate on groundbreaking projects"
+            buttonText="Join Our Community"
+          />
         <section id="solutions">
           <Features />
           <Mission />
@@ -38,6 +44,11 @@ export default function Home() {
           <Products />
           <StatsNew />
           <Testimonials />
+          <JoinCommunityCTA 
+            tagline="Ready to Transform Your Business?"
+            subline="Join thousands of companies already using Microlabs to drive innovation and growth"
+            buttonText="Get Started Today"
+          />
         </section>
         <section id="pricing">
           <PricingPhilosophy />
@@ -47,6 +58,11 @@ export default function Home() {
         <section id="faq">
           <FAQ />
         </section>
+        <JoinCommunityCTA 
+          tagline="Become Part of Something Bigger"
+          subline="Join our growing community of entrepreneurs, developers, and innovators shaping the future"
+          buttonText="Join Community Now"
+        />
         <FinalCTA />
         <Footer />
       </div>

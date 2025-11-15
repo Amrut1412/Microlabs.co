@@ -56,6 +56,7 @@ export function Block() {
               borderRadius="2xl"
               border="1px solid"
               borderColor="gray.200"
+              height={'250px'}
               p={8}
               transition="all 0.3s"
               _hover={{
@@ -94,7 +95,9 @@ export function Block() {
                   variant="outline"
                   colorPalette="brand"
                   size="lg"
-                  mt={2}
+                  mt={'3'}
+                  position={'absolute'}
+                  bottom={3}
                   _hover={{
                     bg: 'brand.50',
                   }}
