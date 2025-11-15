@@ -61,7 +61,7 @@ export default function Home() {
         <JoinCommunityCTA 
           tagline="Become Part of Something Bigger"
           subline="Join our growing community of entrepreneurs, developers, and innovators shaping the future"
-          buttonText="Join Community Now"
+          buttonText="Join Our Community Now"
         />
         <FinalCTA />
         <Footer />

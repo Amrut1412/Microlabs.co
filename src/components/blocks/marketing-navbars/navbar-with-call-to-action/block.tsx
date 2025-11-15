@@ -32,7 +32,7 @@ export const Block = () => {
               colorPalette="brand"
             >
               <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer">
-                Join Community
+                Join Our Community
               </a>
             </Button>
             <Button size={{ base: 'sm' }} bg="brand.500" color="white" _hover={{ bg: "brand.600" }} _active={{ bg: "brand.700" }}>Start Free Trial</Button>
@@ -49,7 +49,7 @@ export const Block = () => {
                     colorPalette="brand"
                   >
                     <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer" onClick={onClose}>
-                      Join Community
+                      Join Our Community
                     </a>
                   </Button>
                   <Button 

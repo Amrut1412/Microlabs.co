@@ -60,7 +60,7 @@ const footerLinks = {
       { label: 'About TinyCheque', href: 'https://tinycheque.com/company/about-us' },
       { label: 'Careers', href: '#careers' },
       { label: 'Partner Program', href: 'https://tinycheque.com/partnership' },
-      { label: 'Join Community', href: 'https://forms.microlabs.co/join' },
+      { label: 'Join Our Community', href: 'https://forms.microlabs.co/join' },
       { label: 'Contact Us', href: '#contact' },
     ],
   },
@@ -242,7 +242,7 @@ export function Block() {
               </Text>
             </Stack>
 
-            {/* Social Links and Join Community Button */}
+            {/* Social Links and Join Our Community Button */}
             <HStack gap="4" ml={'10'} mr={'10'} flexWrap="wrap">
               <Button
                 asChild
@@ -254,7 +254,7 @@ export function Block() {
                 _active={{ bg: "brand.700" }}
               >
                 <a href="https://forms.microlabs.co/join" target="_blank" rel="noopener noreferrer">
-                  Join Community
+                  Join Our Community
                 </a>
               </Button>
               {socialLinks.map((social) => (
