@@ -10,8 +10,79 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Microlabs - Innovation & Technology",
-  description: "Microlabs - Your trusted partner in technology solutions",
+  metadataBase: new URL('https://microlabs.co'),
+  title: {
+    default: "Microlabs - Innovation & Technology Solutions",
+    template: "%s | Microlabs"
+  },
+  description: "Microlabs - Your trusted partner in cutting-edge technology solutions. We deliver innovative products and services to help businesses scale and succeed.",
+  keywords: ["Microlabs", "technology solutions", "innovation", "software development", "digital transformation", "business solutions"],
+  authors: [{ name: "Microlabs" }],
+  creator: "Microlabs",
+  publisher: "Microlabs",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://microlabs.co",
+    siteName: "Microlabs",
+    title: "Microlabs - Innovation & Technology Solutions",
+    description: "Your trusted partner in cutting-edge technology solutions. We deliver innovative products and services to help businesses scale and succeed.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Microlabs - Innovation & Technology Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Microlabs - Innovation & Technology Solutions",
+    description: "Your trusted partner in cutting-edge technology solutions. We deliver innovative products and services to help businesses scale and succeed.",
+    images: ["/og-image.png"],
+    creator: "@microlabs",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        url: '/icon.png',
+      },
+    ],
+  },
+  verification: {
+    // Add your verification codes here when available
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
+    // bing: 'your-bing-verification-code',
+  },
 };
 
 export default function RootLayout({
